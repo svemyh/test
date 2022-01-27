@@ -21,6 +21,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
 ### Polls
+    path('home/', include('homepage.urls')),
+    path('', include('homepage.urls')),
+
+### Polls
     path('polls/', include('polls.urls')),
     
 ]
