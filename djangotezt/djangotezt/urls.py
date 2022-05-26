@@ -20,11 +20,15 @@ urlpatterns = [
 ### Admin
     path('admin/', admin.site.urls),
 
-### Polls
+### Homepage
     path('home/', include('homepage.urls')),
     path('', include('homepage.urls')),
 
 ### Polls
     path('polls/', include('polls.urls')),
+
+### Arkiv-app
+    path('arkiv/', include('arkiv.urls')),
+
     
 ]
